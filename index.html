@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sticky Animated navigation Bar</title>
+    <link rel="stylesheet" href="/css/sticky.css">
+    <!-- <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:500">
+  
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <div class="logo">LOGO</div>
+            <ul>
+                <li><a href="#"></a>Home</li>
+                <li><a href="#"></a>About</li>
+                <li><a href="#"></a>Blog</li>
+                <li><a href="#"></a>Contact</li>
+                <li><a class="active" href="#">Log In</a></li>
+            </ul>
+        </nav>
+        <section class="sec1"></section>
+        <section class="content">
+            <p>The integrity and crossorigin attributes are used for Subresource Integrity (SRI) checking.
+                This allows browsers to ensure that resources hosted on third-party servers have not been
+                tampered with. Use of SRI is recommended as a best-practice, whenever libraries are loaded
+                from a third-party source. Read more at srihash.org</p>
+            <p>The integrity and crossorigin attributes are used for Subresource Integrity (SRI) checking.
+                This allows browsers to ensure that resources hosted on third-party servers have not been
+                tampered with. Use of SRI is recommended as a best-practice, whenever libraries are loaded
+                from a third-party source. Read more at srihash.org</p>
+            <p>The integrity and crossorigin attributes are used for Subresource Integrity (SRI) checking.
+                This allows browsers to ensure that resources hosted on third-party servers have not been
+                tampered with. Use of SRI is recommended as a best-practice, whenever libraries are loaded
+                from a third-party source. Read more at srihash.org</p>
+            <p>The integrity and crossorigin attributes are used for Subresource Integrity (SRI) checking.
+                This allows browsers to ensure that resources hosted on third-party servers have not been
+                tampered with. Use of SRI is recommended as a best-practice, whenever libraries are loaded
+                from a third-party source. Read more at srihash.org</p>
+            <p>The integrity and crossorigin attributes are used for Subresource Integrity (SRI) checking.
+                This allows browsers to ensure that resources hosted on third-party servers have not been
+                tampered with. Use of SRI is recommended as a best-practice, whenever libraries are loaded
+                from a third-party source. Read more at srihash.org</p>
+            <p>The integrity and crossorigin attributes are used for Subresource Integrity (SRI) checking.
+                This allows browsers to ensure that resources hosted on third-party servers have not been
+                tampered with. Use of SRI is recommended as a best-practice, whenever libraries are loaded
+                from a third-party source. Read more at srihash.org</p>
+
+        </section>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+        $(window).on('scroll', function () {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('black');
+            }
+            else {
+                $('nav').removeClass('black');
+            }
+        });
+    </script>
+</body>
+
+</html>

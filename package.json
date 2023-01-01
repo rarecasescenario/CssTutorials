@@ -1,0 +1,26 @@
+{
+  "name": "tut1",
+  "version": "1.0.0",
+  "description": "Using npm for creating a web applications",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vasyland/CssTutorials.git"
+  },
+  "keywords": [
+    "Css",
+    "Tutorial"
+  ],
+  "author": "va",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vasyland/CssTutorials/issues"
+  },
+  "homepage": "https://github.com/vasyland/CssTutorials#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>REsponsive Stick navigation Bar</title>
+    <link rel="stylesheet" href="/css/respstick.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <div class="menu-icon">
+                    <i class="fa far-bars fa-2x"></i>
+                </div>
+                <div class="logo">LOGO</div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a class="active" href="#">Contacts</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="content">
+            <p>:default input:default Selects the default SSSS element
+                :disabled input:disabled Selects every disabled SS element
+                :empty p:empty Selects every <p> element that has no children (including text nodes)
+                    :enabled input:enabled Selects every enabled <SS> element
+                        :first-child p:first-child Selects every <p> element that is the first child of its parent
+                            ::first-letter p::first-letter Selects the first letter of every <p> element
+                                ::first-line p::first-line Selects the first line of every <p> element
+                                    :first-of-type p:first-of-type Selects every <p> element that is the first <p>
+                                            element of its parent
+     focus input:focus Selects the input element which has focus
+                                            :hover a:hover Selects links on mouse over
+                                            :in-range input:in-range Selects input elements with a value within a
+                                            specified range
+                                            :indeterminate input:indeterminate Selects input elements that are in an
+                                            indeterminate state
+                                            :invalid input:invalid Selects all input elements with an invalid value
+                                            :lang(language) p:lang(it) Selects every <p> element with a lang attribute
+                                                equal to "it" (Italian)
+                                                :last-child p:last-child Selects every <p> element that is the last
+                                                    child of its parent
+                                                    :last-of-type p:last-of-type Selects every <p> element that is the
+                                                        last <p> element of its parent
+                                                            :link a:link Selects all unvisited links</p>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+        // Menu-toggle button
+
+        $(document).ready(function () {
+            $(".menu-icon").on("click", function () {
+                $("nav ul").toggleClass("showing");
+            });
+        });
+
+        // Scrolling Effect
+
+        $(window).on("scroll", function () {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('black');
+            }
+
+            else {
+                $('nav').removeClass('black');
+            }
+        })
+
+
+    </script>
+</body>
+
+</html>
