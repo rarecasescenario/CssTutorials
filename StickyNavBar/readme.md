@@ -47,19 +47,6 @@ yarn-error.log*
 *.seed
 *.pid.lock
 
-# nyc test coverage
-.nyc_output
-
-# Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
-.grunt
-
-# Bower dependency directory (https://bower.io/)
-bower_components
-
-# node-waf configuration
-.lock-wscript
-
-#
 # Optional npm cache directory
 .npm
 .eslintcache
